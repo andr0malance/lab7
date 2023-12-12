@@ -1,0 +1,20 @@
+Console.WriteLine("Введите полное имя файла");
+string file = Console.ReadLine();
+int count = 0;
+for (int i = 0; i < file.Length; i++)
+{if (file[i] == '\\')
+    {
+        count++;
+    }
+
+}
+if  (count > 0)
+    {
+        string[] textmass = file.Split(new char[] { '\\' });
+        Console.WriteLine(textmass [textmass.Length - 1]); //выводится в консоль последняя строка по индексу
+    }
+    else
+    {
+        Console.WriteLine("\\");
+    }
+Console.ReadKey();
