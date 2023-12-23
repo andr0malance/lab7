@@ -11,7 +11,7 @@ for (int i = 0; i < file.Length; i++)
 if  (count > 0)
     {
         string[] textmass = file.Split(new char[] { '\\' });
-        Console.WriteLine(textmass [textmass.Length - 1]); //выводится в консоль последняя строка по индексу
+        Console.WriteLine(textmass [textmass.Length - 1]); 
     }
     else
     {
